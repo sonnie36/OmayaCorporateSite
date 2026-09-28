@@ -1,0 +1,133 @@
+.line1{
+    width:40px;
+    border-bottom: 2px solid #37A793;
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color:#37A793;
+    justify-content: center;
+    margin-top: 50px;
+}
+.header h5{
+    font-size: 1.25rem;
+    color: #37A793;
+}
+.service-title h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.service{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width:100%;
+}
+.service:hover{
+    background:linear-gradient(180deg, #37A793 20%, #37A48D 29.9%, #1D8751 100%);
+    transition: 0.3s;
+}
+
+.iconDiv,.arrow{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(248, 251, 253, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconDiv{
+    width:50px;
+    height:50px;
+}
+.arrow{
+    width:35px;
+    height:35px;
+}
+.diamond{
+    width:70px;
+    height:70px;
+    border-radius: 5px;
+    background-color: rgba(55, 167, 147, 0.1);
+    position: absolute;
+    z-index:-2000;
+    transform: rotate(45deg); 
+}
+.smallDiamond{
+    width:30px;
+    height:30px;
+    border-radius: 5px;
+    background-color: rgba(55, 167, 147, 1);
+    position:absolute;
+    top:25px;
+    left:15px;
+    transform: rotate(45deg); 
+}
+.smallDiamond2{
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    background-color: rgba(55, 167, 147, 0.3);
+    position:absolute;
+    top:290px;
+    right:25px;
+    transform: rotate(45deg); 
+}
+
+@media (max-width: 768px) {
+    .services {
+        max-width: 90%;
+        gap: 15px;
+    }
+    .service {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:744px){
+    .services{
+        max-width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+.service{
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    .services {
+        max-width: 100%;
+        gap: 10px;
+    }
+    .service {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+    /* .diamond, .smallDiamond, .smallDiamond2 {
+        display: none; 
+    } */
+}

@@ -1,0 +1,172 @@
+.footer {
+    background-color: #151515;
+    color: #e4e4e4;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-company {
+  
+    max-width: 400px;
+  }
+  
+  .footer-company h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-company p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    color: #e4e4e4;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    flex: 1;
+  }
+  
+  .footer-links h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #45b69c;
+  }
+  
+  .footer-contact {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .footer-contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .footer-contact ul li i {
+    margin-right: 10px;
+    color: #45b69c;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .footer-logo{
+    width:120px;
+    height:40px;
+
+  }
+  
+  .links{
+    display:flex;
+    gap:50px;
+  }
+  .link{
+    display:flex;
+    gap:15px;
+    align-items: center;
+  }
+  .omaya-logo{
+    width:120px;
+    height: 30px;
+  }
+  .omaya-logo2{
+    width:70px;
+    height:25px;
+    margin-top:5px;
+  }
+  .powered-by{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .powered-by img{
+    margin-left: 15px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  .footer-company{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+    .footer-company,
+    .footer-links,
+    .footer-contact {
+      margin-bottom: 30px;
+      max-width: 100%;
+      text-align: center;
+    }
+    .footer-contact ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .omaya-logo{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  

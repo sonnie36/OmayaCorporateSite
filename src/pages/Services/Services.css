@@ -1,0 +1,117 @@
+.service-title h3{
+   font-size: 1.25rem;
+    font-weight: bold;
+    color: rgba(29, 135, 81, 1);
+    margin: 50px 0;
+    text-align: center;
+}
+.services{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.service{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:280px;
+    height:auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.service:hover{
+    background:linear-gradient(180deg, #37A793 20%, #37A48D 29.9%, #1D8751 100%);
+    transform: translateY(-10px) scale(1.02); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.iconDiv,.arrow{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(248, 251, 253, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconDiv{
+    width:50px;
+    height:50px;
+}
+.arrow{
+    width:35px;
+    height:35px;
+}
+.diamond{
+    width:70px;
+    height:70px;
+    border-radius: 5px;
+    background-color: rgba(55, 167, 147, 0.1);
+    position: absolute;
+    z-index:-2000;
+    transform: rotate(45deg); 
+}
+.smallDiamond{
+    width:30px;
+    height:30px;
+    border-radius: 5px;
+    background-color: rgba(55, 167, 147, 1);
+    position:absolute;
+    top:25px;
+    left:15px;
+    transform: rotate(45deg); 
+}
+.smallDiamond2{
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    background-color: rgba(55, 167, 147, 0.3);
+    position:absolute;
+    top:230px;
+    right:25px;
+    transform: rotate(45deg); 
+}
+
+/* Detailed view styling */
+.service-detail {
+    padding: 20px;
+}
+
+.service-detail-content {
+    margin-top: 20px;
+}
+
+.service-detail img {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.specifics{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: start;
+    width:100%;
+}
+.specifics-content,.specifics-image{
+    width:50%;
+}
+.back-button {
+ width:50px;
+ height:50px;
+ border-radius:50%;
+
+}
+
+

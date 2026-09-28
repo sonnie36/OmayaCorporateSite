@@ -1,0 +1,238 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #fff;
+  }
+  
+  .about-image {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-content {
+    padding-left: 50px;
+  }
+  
+  .about-content h5 {
+    font-size: 1.25rem;
+    color: #1D8751;
+  }
+  
+  .line{
+    width: 40px;
+    border-bottom: 2px solid #1D8751;
+    padding: 10px;
+  }
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+  .about-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  .about-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #1D8751;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #155e00;
+  }
+  /* mission vision */
+  .page-vision-section{
+    position: relative;
+    padding: 50px 100px;
+    text-align: center;
+    background-image: url('https://res.cloudinary.com/dam1sxczj/image/upload/v1726633545/Rectangle_4305_rq7j1n.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  .page-vision-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+ 
+  /* Core Values */
+.core-values {
+  width: 95%;
+  margin: 100px auto;
+  padding: 0 50px;
+}
+
+.container {
+  display: flex; 
+  gap: 20px;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.value-image {
+  width: 25%;
+  height: auto; 
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.values {
+  width: 75%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: stretch; 
+}
+
+.value-item {
+  display: flex;
+  align-items:start;
+  max-width: 30%;
+}
+
+.value-icon {
+  font-size: 30px;
+  color: rgba(29, 135, 81, 1);
+  margin-right: 10px;
+}
+
+.value-content h4 {
+  margin: 0;
+  color: rgba(7, 31, 55, 1);
+  font-weight: bold;
+}
+
+.value-content p {
+  color: #333;
+  margin-top: 5px;
+}
+
+  
+  /* Founder */
+  .founder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .founder-card{
+    max-width:800px;
+    padding:20px;
+    background: rgba(241, 243, 248, 1);
+    border: 1px solid rgba(125, 139, 163, 0.4);
+    border-radius:10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+  }
+  .name{
+    border-bottom:1px solid rgba(125, 139, 163, 0.4)
+  }
+  .name p{
+    color:#666;
+  }
+  .socials{
+    margin-top:20px;
+    display: flex;
+    gap:10px;
+  }
+  .icon-container{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #87CABE 0%, #3AAB93 49.9%, #41B077 100%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-section{
+    margin: 0 20px;
+  }
+  @media(max-width:950px){
+    .about{
+      padding:50px;
+    }
+    .value-item{
+      max-width: 42%;
+    }
+    .value-image{
+      height:stretch;
+    }
+  }
+  @media(max-width:844px){
+    .value-image{
+      width:100%;
+      height: 50%;
+    }
+    .container{
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .values{
+      width:100%;
+      justify-content: center;
+      gap:10px;
+      flex-wrap:wrap;
+      flex:0;
+    }
+  }
+ 
+@media(max-width:472px){
+  .image-section{
+    margin: 20px;
+  }
+  .value-item{
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .about-content{
+    padding-left: 0;
+  }
+  .about{
+    padding:30px;
+    justify-content: center;
+  }
+  .vision-txt{
+    padding:0;
+  }
+}
